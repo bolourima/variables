@@ -1,0 +1,47 @@
+:root {
+  --blue: #11283f;
+  --white: #d7d7d7;
+}
+
+.container {
+  --fontsize: 25px;
+}
+
+body {
+  background-color: var(--blue);
+}
+
+h2 {
+  border-bottom: 2px solid var(--blue);
+}
+
+.container {
+  color: var(--blue);
+  background-color: var(--white);
+  padding: 15px;
+  font-size: var(--fontsize);
+}
+
+.latest-product-card {
+  width: 200px;
+  height: 300px;
+  padding: 30px;
+  display: flex;
+  flex-shrink: 0;
+  cursor: pointer;
+  row-gap: 12px;
+  border-radius: 18px;
+  flex-direction: column;
+  scroll-snap-align: start;
+  box-shadow: rgba(0, 0, 0, 0.08) 2px 4px 12px 0px;
+  background: var(--image-url) center/cover no-repeat;
+}
+
+@media screen and (min-width: 600px) {
+  .container {
+    --fontsize: 50px;
+  }
+  :root {
+    --blue: lightblue;
+  }
+}
